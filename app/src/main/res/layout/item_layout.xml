@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="@dimen/_4sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingStart="@dimen/_4sdp"
+    android:paddingEnd="0dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imgAva"
+        android:id="@+id/imvAva"
+        android:layout_centerVertical="true"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:background="@drawable/border_background"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/mia_smoak" />
 
     <TextView
         android:id="@+id/tvDesName"
         android:text="Nhà hàng Hiếu Béo"
         android:textColor="@color/black"
-        android:layout_toEndOf="@id/imgAva"
+        android:layout_toEndOf="@id/imvAva"
         android:layout_marginStart="@dimen/_4sdp"
         android:textStyle="bold"
         android:textSize="@dimen/_14sdp"
@@ -25,11 +27,20 @@
     <TextView
         android:id="@+id/tvDesAddress"
         android:textStyle="italic"
-        android:layout_toEndOf="@id/imgAva"
+        android:layout_toEndOf="@id/imvAva"
         android:layout_below="@id/tvDesName"
         android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_4sdp"
         android:text="Số 5, Ngõ 77, Bùi Xương Trạch, quận Thanh Xuân"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <View
+        android:layout_below="@id/tvDesAddress"
+        android:background="@drawable/slider"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"/>
 
 </RelativeLayout>
