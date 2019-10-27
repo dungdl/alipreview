@@ -5,6 +5,7 @@ public class Destination {
     private String name;
     private String address;
     private String ava;
+    private Location location;
 
     public Destination(String id, String name, String address, String ava) {
         this.id = id;
@@ -25,6 +26,10 @@ public class Destination {
         return address;
     }
 
+    public Location getLocation() {
+        return location;
+    }
+
     public String getAva() {
         return ava;
     }
@@ -39,5 +44,9 @@ public class Destination {
 
     public void setAva(String ava) {
         this.ava = ava;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 }
