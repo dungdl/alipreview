@@ -23,7 +23,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAmUCnAitZbgp8D6KJQjaFy8VXhzsQLyqw"/>
+            android:value="MY_API_KEY"/>
 
         <service android:name="services.DataAccess" />
         <service android:name="services.GeoService" />
