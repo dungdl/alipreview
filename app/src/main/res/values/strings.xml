@@ -21,4 +21,5 @@
     <string name="destination_address">Destination Address</string>
     <string name="choose_from_gallery">Choose from gallery</string>
     <string name="take_a_picture">Take a picture</string>
+    <string name="done">done</string>
 </resources>

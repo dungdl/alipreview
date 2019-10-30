@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/lilayAddActivity"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lilayAddActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,7 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize" />
+        android:minHeight="?attr/actionBarSize">
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/border_button"
+            android:text="@string/done"
+            android:textColor="@color/white" />
+
+    </android.support.v7.widget.Toolbar>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -44,14 +56,25 @@
                 android:maxLines="1" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/lilayInput"
+            android:layout_alignTop="@id/btnAutoLocate"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="location"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
         <ImageButton
             android:id="@+id/btnAutoLocate"
+            android:layout_alignRight="@id/btnAddPhoto"
             android:layout_width="@dimen/_80sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/lilayInput"
-            android:layout_alignEnd="@id/lilayInput"
             android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginEnd="@dimen/_8sdp"
             android:background="@drawable/border_button"
             android:src="@drawable/ic_pin_drop_white_24dp" />
 
